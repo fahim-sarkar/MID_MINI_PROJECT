@@ -1,0 +1,2 @@
+# MID_MINI_PROJECT
+MID Mini Project using HTML,PHP,SQL
