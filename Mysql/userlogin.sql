@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2020 at 09:30 AM
+-- Generation Time: Aug 10, 2020 at 09:48 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -28,20 +28,20 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `userlogin` (
-  `id` int(100) NOT NULL,
-  `username` varchar(12) NOT NULL,
-  `password` varchar(30) NOT NULL
+  `ID` varchar(100) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL,
+  `Type` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Indexes for dumped tables
+-- Dumping data for table `userlogin`
 --
 
---
--- Indexes for table `userlogin`
---
-ALTER TABLE `userlogin`
-  ADD PRIMARY KEY (`id`);
+INSERT INTO `userlogin` (`ID`, `Name`, `Email`, `Password`, `Type`) VALUES
+('ifahim.net@gmail.com', 'MD. Fahim Sarkar', 'ifahim.net@gmail.com', 'ifahim', 'admin'),
+('abc@gmail.com', 'ABC', 'abc@gmail.com', '123', 'user');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
